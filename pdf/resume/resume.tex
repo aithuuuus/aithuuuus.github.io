@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Color setup for links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Resume - Chenjie Mao},
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1.5ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \bfseries Chenjie Mao} \\ \vspace{0.5em}
+    \href{mailto:cmao@wustl.edu}{cmao@wustl.edu}
+\end{center}
+
+\vspace{1em}
+
+% About Me
+\section*{About Me}
+I am a PhD student at Washington University in St. Louis, advised by Professor Chongjie Zhang. My research interests encompass a broad range of topics in learning theory, including reinforcement learning, online learning, and deep learning theory. Recently, I have focused primarily on the statistical aspects of (offline) reinforcement learning, especially its non-asymptotic behaviors and extensions to reinforcement learning with human feedback (RLHF).
+
+% Education
+\section*{Education}
+\textbf{Huazhong University of Science and Technology} \hfill 2020 -- 2024 \\
+Bachelor of Engineering, School of Computer Science and Technology
+
+\textbf{Huazhong University of Science and Technology} \hfill 2025 -- Present \\
+Phd Student, Computer Science and Engineering
+
+% Work Experience
+\section*{Work Experience}
+\textbf{Shanghai Artificial Intelligence Laboratory} \hfill 2023.7 -- 2025.6 \\
+\textit{Research Assistant}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Investigated the statistical aspects of offline reinforcement learning and related areas.
+    \item Explored potential alignments between RL and RLHF.
+\end{itemize}
+
+% Preprints & Publications
+\section*{Preprints \& Publications}
+\begin{enumerate}[leftmargin=*, noitemsep, topsep=2pt]
+
+    \item \textbf{Offline Reinforcement Learning with Additional Covering Distributions} \\
+    Chenjie Mao\footnote{Completed independently as a third-year undergraduate student.} \\
+    \textit{TMLR (Transactions on Machine Learning Research)}
+    \begin{itemize}[leftmargin=1.5em, noitemsep, topsep=1pt]
+        \item Proposed an algorithm with statistical guarantees for offline RL, utilizing general function approximation under single coverage and realizability-type assumptions, based on an additional covering distribution.
+    \end{itemize}
+    
+    \vspace{0.5em}
+    
+    \item \textbf{On the Role of General Function Approximation in Offline Reinforcement Learning} \\
+    Chenjie Mao, Qiaosheng Zhang, Zhen Wang, Xuelong Li \\
+    \textit{ICLR 2024 Spotlight, Top 5\%}
+    \begin{itemize}[leftmargin=1.5em, noitemsep, topsep=1pt]
+        \item Investigated the statistical limitations of offline reinforcement learning with general function approximation and established some lower bounds.
+    \end{itemize}
+
+    \item \textbf{Rethinking the Hardness of PbRL: A Provable General Regret Bound} \\
+    Chenjie Mao, Yi Fan, Ning Zhang, Chongjie Zhang\\
+    \textit{International Conference on Machine Learning (ICML), 2026}
+    \begin{itemize}[leftmargin=1.5em, noitemsep, topsep=1pt]
+        \item Introduced RTPQ, a simple and provably efficient algorithm that achieves near-optimal $\sqrt{T}$ regret in preference-based reinforcement learning with trajectory-level feedback.
+    \end{itemize}
+\end{enumerate}
+
+% Interests
+\section*{Interests}
+I have broad interests in topics in machine learning, such as:
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+    \item Reinforcement Learning
+    \item Generative Models
+\end{itemize}
+
+% Skills
+\section*{Skills}
+\textbf{Proficient:} Python, PyTorch, Git, Linux, LaTeX \\
+\textbf{Have Experience:} Shell Scripting, C/C++, Golang
+
+\end{document}

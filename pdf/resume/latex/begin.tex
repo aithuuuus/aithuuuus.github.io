@@ -1,0 +1,79 @@
+% modified from arxiv 2203.13935, maybe also from uai
+\documentclass{article}
+\usepackage[american]{babel}
+
+%% Some suggested packages, as needed:
+\usepackage{natbib} % has a nice set of citation styles and commands
+    \bibliographystyle{plainnat}
+    \bibpunct{(}{)}{;}{a}{,}{,}
+    \renewcommand{\bibsection}{\subsubsection*{References}}
+\usepackage{mathtools} % amsmath with fixes and additions
+% \usepackage{siunitx} % for proper typesetting of numbers and units
+\usepackage{booktabs} % commands to create good-looking tables
+%\usepackage{tikz} % nice language for creating drawings and diagrams
+
+
+\usepackage{textcase}
+
+%% Provided macros
+% \smaller: Because the class footnote size is essentially LaTeX's \small,
+%           redefining \footnotesize, we provide the original \footnotesize
+%           using this macro.
+%           (Use only sparingly, e.g., in drawings, as it is quite small.)
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath, amsthm, amssymb, amsfonts, mathtools, graphicx, enumitem}
+\usepackage{mathrsfs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}[theorem]
+\newtheorem{assumption}{Assumption}
+\newtheorem{conjecture}{Conjecture}
+
+\usepackage{comment}
+
+
+
+%%%% Drawing
+\usepackage{tikz}
+\usepackage{bbm}
+\usetikzlibrary{automata, arrows}
+\usetikzlibrary{positioning}
+
+
+
+%%%% cref, Cref
+\usepackage{hyperref}
+\usepackage[capitalise,nameinlink]{cleveref}
+\Crefname{equation}{Eq.}{Eqs.}
+\Crefname{assumption}{Assumption}{Assumptions}
+\Crefname{condition}{Condition}{Conditions}
+
+
+%%% Allow math equation to cross pages
+\allowdisplaybreaks
+
+
+
+\newcount\Comments  % 0 suppresses notes to selves in text
+\Comments=0 % TODO: change to 0 for final version
+\definecolor{darkred}{rgb}{0.7,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{orange}{rgb}{0.7,0.4,0}
+\definecolor{purple}{rgb}{0.8,0.0,0.8}
+%\newcommand{\kibitz}[2]{\ifnum\Comments=1{\textcolor{#1}{\textsf{\footnotesize #2}}}\fi}
+\newcommand{\jc}[1]{\textcolor{orange}{[JC: #1]}}
+\newcommand{\nj}[1]{\textcolor{red}{[NJ: #1]}}
+
+\author{Aithus}
+\date{\today}
+\setcitestyle{square}
